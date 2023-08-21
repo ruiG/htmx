@@ -1,0 +1,11 @@
+{
+  "name": "my-htmx-server",
+  "version": "0.0.1",
+  "description": "serve HTMX duh",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "ruig",
+  "license": "MIT"
+}
