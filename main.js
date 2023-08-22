@@ -11,8 +11,3 @@ document.getElementById('target').addEventListener('click', () => {
         });
       }, 500);
 })
-
-const me = document.getElementById('me')
-me.addEventListener('click', () => {
-
-})
