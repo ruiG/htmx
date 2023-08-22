@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
     <link href="/style.css" rel="stylesheet">
-    <title>HTMX</title>
+    <title>Rui Gonçalves</title>
     <script
       src="https://unpkg.com/htmx.org@1.9.4"
       integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV"
@@ -13,11 +13,13 @@
     ></script>
   </head>
   <body>
-    <div id="app">
+    <section class="container">
       <img id="me" src="/Me.jpg?url" alt="me" class="logo"/>
         <h1>Rui Gonçalves</h1>
-        <h2 hx-get="http://127.0.0.1:8081" hx-trigger="load, every 3s"></h2>
-    </div>
-    <script type="module" src="/main.js"></script>
+        <h2 hx-get="%VITE_API_URL%/aboutme" hx-trigger="load, every 6s">Software developer 🚀</h2>
+        
+        <button id="target">🚀</button>
+    </section>
   </body>
+  <script type="module" src="/main.js"></script>
 </html>
